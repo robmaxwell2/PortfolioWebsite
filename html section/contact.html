@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+        fieldset {
+            width: 60%;
+            display:block;
+            margin: auto;
+        }
+        #contactnav {
+            font-size: 40px;  
+        }
+        #login-information {
+            text-align: left;
+            font-size: 20px;
+            margin-left: 30%;
+        }
+
+        #moreinfo {
+            text-align: left;
+            font-size: 20px;
+            margin-left: 30%;
+        }
+
+
+        #survey1 {
+            font-size: 20px;
+            margin-left: 40%;
+            width: 80%;
+            text-align: left;
+        }
+
+        #survey2 {
+            font-size: 20px;
+            margin-left: 40%;
+            width: 80%;
+            text-align: left;
+        }
+        header {
+            text-align: center;            
+            background-color: rgb(240, 241, 219);
+            margin-left: auto;
+            margin-right:auto;
+                }
+        #nav-link {
+            color: brown;
+            text-decoration: none;
+            font-size: 30px;
+                  }
+   
+        h2 {            
+            color: black;
+            text-align: left;
+            margin-left: 30%;
+        }
+       
+        li {
+            font-size: 20px;            
+            color: black;
+        }
+        
+     </style>
+
+</head>
+
+
+
+
+<body>
+    <header>
+        <nav id="contactnav">
+            <a id="nav-link" href="./index.html">Home</a>
+            <a id="nav-link" href="./contact.html">Contact</a>
+            <a id="nav-link" href="./about.html">About</a>    
+            <a id="nav-link" href="./projects.html">Projects</a>    
+            <a id="nav-link" href="./resume.html">Resume</a>
+
+        </nav>
+    </header>
+
+    <fieldset>
+                 <h2>Member Login</h2>
+            <div id="login-information">
+                
+                           
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" required>
+                <br><br>
+        
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email"required>
+                <br><br>
+        
+                <label for="password">Password:</label>
+                <input id="password" name="password" type="password"required>
+                <br>
+                <br>
+                <input type="submit" value="Login">
+
+                <br><br>
+            </div>
+
+                 <h2>Want more help? Sign up for free information</h2>
+                <div id="moreinfo">
+            
+                <br>               
+            
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text">
+                <br><br>
+        
+                <label for="name">Address:</label>
+                <input id="address" name="address" type="text">
+                <br><br>
+        
+                <label for="Phone Number">Phone Number:</label>
+                <input id="Phone Number" name="password" type="text">
+                <br><br>
+                <br>
+    
+            <form action="/action_page.php">
+                    <label for="method">Which method you prefer to be contacted:</label>
+                    <br>
+                    <select id="method" name="method">
+                    <option value="Phone">Phone</option>
+                    <option value="Email">Email</option>
+                    <option value="Text">Text</option>
+                    <option value="Social Media">Social Media</option>
+                    </select>
+                        <br>
+                        <br>
+                    <!--Text area example-->
+                    <label for="comments">Comment:</label><br>
+                    <textarea id="comments" name="comnments"></textarea>
+                    <br>
+                        
+                    <input type="submit" value="Submit">
+            </form>
+                        <br>
+                        <br>
+                        <br>
+
+
+            </div>
+    </fieldset>
+    
+            <h2>Fill out out the survey below and tell us how we can help you</h2>
+    
+            <h2>Which job search methods do you typically use in your search?</h2>
+
+         
+            <div id="survey1">      
+
+             <form id="survey">
+             <input type="radio" id="html" name="fav_language" value="online forums">
+             <label for="online forums">Online Forums</label><br>
+
+             <input type="radio" id="Job Applications" name="fav_language" value="Job Applications">
+             <label for="css">Job Applications</label><br>
+
+             <input type="radio" id="Ask a Friend" name="fav_language" value="Ask a Friend">
+             <label for="javascript">Ask a friend</label><br>
+
+             <input type="radio" id="In Person Interview" name="fav_language" value="In Person Interview">
+             <label for="javascript">In Person Interview</label><br>
+
+             <input type="radio" id="Newspaper" name="fav_language" value="Newspaper">
+             <label for="javascript">Newspaper</label><br>
+
+             <input type="radio" id="Other" name="fav_language" value="Other">
+             <label for="javascript">Other</label><br>
+                 <br>            
+                 <br>
+            </div>
+              
+            
+            <h2>What are some ways you need help to feel confident in your job search?</h2>
+            
+            <div id="survey2">
+                <input type="checkbox" id="method1" name="method1" value="Apply Online">
+                <label for="method1"> Need help Applying</label><br>
+
+                <input type="checkbox" id="method2" name="method2" value="What to say">
+                <label for="method2"> What to say?</label><br>
+
+                <input type="checkbox" id="method3" name="method3" value="How to Network">
+                <label for="method3"> Learn how to network</label><br>
+
+                <input type="checkbox" id="method4" name="method4" value="Me in 30 seconds">
+                <label for="method4"> Me in 30 seconds</label><br>
+
+                <input type="checkbox" id="method5" name="method5" value="How to Network">
+                <label for="method5"> Learn how to network</label><br>
+   
+                <input type="checkbox" id="method6" name="method6" value="Prepare for Interview">
+                <label for="method6">Prepare for Interview</label><br>
+            </div>
+                <br>
+                <br>
+</body>
+</html>
