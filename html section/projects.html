@@ -1,81 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-        <style>
+    <style>
+      #contactnav {
+        font-size: 40px;
+      }
+      header {
+        text-align: center;
+        background-color: rgb(240, 241, 219);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #nav-link {
+        color: brown;
+        text-decoration: none;
+        font-size: 30px;
+      }
 
-        #contactnav {
-            font-size: 40px;
-        }
-        header {
-           text-align: center;            
-           background-color: rgb(240, 241, 219);
-           margin-left: auto;
-           margin-right:auto;
-               }
-        #nav-link {
-           color: brown;
-           text-decoration: none;
-           font-size: 30px;
-                 }
+      h2 {
+        color: black;
+        text-align: center;
+      }
 
-        h2 {            
-           color: black;
-           text-align: center;
-        }
+      li {
+        font-size: 20px;
+        color: black;
+      }
 
-        li {
-           font-size: 20px;            
-           color: black;
-        }
+      .image-button {
+        display: block;
+        margin: auto;
+        align-items: center;
+        background-image: url("thebreezyfresh.com");
+        cursor: pointer;
+        width: 180px;
+        height: 180px;
+      }
 
-        .image-button {
-         display: block;
-         margin:auto;
-         width: 100px;
-         height: 100px;
-         align-items: center;
-         left: 50%;
-         top: 50%; 
-         background-image: url('thebreezyfresh.com');
-         background-size: cover;
-         border: none;
-         cursor: pointer;
-        }
-        body {background-color: rgb(240, 241, 219);
-        }
-</style>
-       
-</head>
+      .image-link {
+        width: 180px;
+      }
 
-<body>
+      body {
+        background-color: rgb(240, 241, 219);
+      }
+    </style>
+  </head>
+
+  <body>
     <header>
-        <nav id="contactnav">
-            <a id="nav-link" href="./index.html">Home</a>
-            <a id="nav-link" href="./contact.html">Contact</a>
-            <a id="nav-link" href="./about.html">About</a>    
-            <a id="nav-link" href="./projects.html">Projects</a>    
-            <a id="nav-link" href="./resume.html">Resume</a>
-        </nav>    
+      <nav id="contactnav">
+        <a id="nav-link" href="./index.html">Home</a>
+        <a id="nav-link" href="./contact.html">Contact</a>
+        <a id="nav-link" href="./about.html">About</a>
+        <a id="nav-link" href="./projects.html">Projects</a>
+        <a id="nav-link" href="./resume.html">Resume</a>
+      </nav>
     </header>
 
-        <h2>Website Project: The Breezy Fresh</h2>
-   
-            
-            <a href="https://www.thebreezyfresh.com">
-                <img class="image-button"src="./img/breezyfreshbutton.PNG" alt="The Breezy Fresh" style="width:180px;height:180px;">
-            </a>
+    <h2>Website Project: The Breezy Fresh</h2>
 
-        <h2>Website Project: Name Your Cone</h2>
-                        <br>
-                         <br>
-            <a href="https://www.nameyourcone.com">
-                <img class="image-button"src="./img/nameyourcone.png" alt="Name Your Cone" style="width:180px;height:180px;">
-            </a>
-      
-       
-</body>
+    <a class="image-link" href="https://www.thebreezyfresh.com">
+      <img
+        class="image-button"
+        src="./img/breezyfreshbutton.PNG"
+        alt="The Breezy Fresh"
+      />
+    </a>
+
+    <h2>Website Project: Name Your Cone</h2>
+    <br />
+    <br />
+    <a class="image-link" href="https://www.nameyourcone.com">
+      <img
+        class="image-button"
+        src="./img/nameyourcone.png"
+        alt="Name Your Cone"
+      />
+    </a>
+  </body>
 </html>

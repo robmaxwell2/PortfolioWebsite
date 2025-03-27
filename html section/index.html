@@ -1,80 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
+      .button {
+        background-color: #0d10b8; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        border-radius: 8px;
+        transition-duration: 0.4s;
+      }
 
-        body, html {
+      .button:hover {
+        background-color: #04aa6d; /* Green */
+        color: white;
+      }
+
+      body,
+      html {
         height: 100%;
-        }
+      }
 
-        .hero-image {  
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.licdn.com/dms/image/v2/C4D16AQE8F3NCUIwLRw/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1668445835670?e=1748476800&v=beta&t=xbiLMk1B9Jekh_Zns6qy8UjoERzA7SJ2voRvEqL11hU");
-        height: 50%;
+      .hero-image {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("https://media.licdn.com/dms/image/v2/C4D16AQE8F3NCUIwLRw/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1668445835670?e=1748476800&v=beta&t=xbiLMk1B9Jekh_Zns6qy8UjoERzA7SJ2voRvEqL11hU");
+        height: 75%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        }
-        /* Place text in the middle of the image */
-        .hero-text {
+      }
+      /* Place text in the middle of the image */
+      .hero-text {
         text-align: center;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: medium;
-        }
+        font-size: large;
+      }
 
-         #contactnav {
-            font-size: 40px;
-        }
-         header {
-            text-align: center;            
-            background-color: rgb(240, 241, 219);
-            margin-left: auto;
-            margin-right:auto;
-                }
-        #nav-link {
-            color: brown;
-            text-decoration: none;
-            font-size: 30px;
-                  }
+      #contactnav {
+        font-size: 40px;
+      }
+      header {
+        text-align: center;
+        background-color: rgb(240, 241, 219);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #nav-link {
+        color: brown;
+        text-decoration: none;
+        font-size: 30px;
+      }
 
-        h1 {            
-            color: black;
-            text-align: center;
-        }
-        
-        li {
-            font-size: 20px;            
-            color: black;
-        }
-        
+      h1 {
+        color: rgb(252, 250, 250);
+        text-align: center;
+        font-size: 50px;
+      }
+
+      li {
+        font-size: 20px;
+        color: black;
+      }
     </style>
-</head>
-<body>
-    <header>
-        <nav id="contactnav">
-            <a id="nav-link" href="./index.html">Home</a>
-            <a id="nav-link" href="./contact.html">Contact</a>
-            <a id="nav-link" href="./about.html">About</a>    
-            <a id="nav-link" href="./projects.html">Projects</a>   
-            <a id="nav-link" href="./resume.html">Resume</a>
+  </head>
 
-        </nav>
+  <body>
+    <header>
+      <nav id="contactnav">
+        <a id="nav-link" href="./index.html">Home</a>
+        <a id="nav-link" href="./contact.html">Contact</a>
+        <a id="nav-link" href="./about.html">About</a>
+        <a id="nav-link" href="./projects.html">Projects</a>
+        <a id="nav-link" href="./resume.html">Resume</a>
+      </nav>
     </header>
 
     <div class="hero-image">
-        <div class="hero-text">
-          <h1>I am Robert</h1>
-          <p>Helping You Sell You</p>
-          <a href="https://www.linkedin.com/in/robmaxwell2"><button>Connect with Me</button></a>
-        </div>
-    </div> 
-</body>
+      <div class="hero-text">
+        <h1>Helping You Sell You</h1>
+        <a href="https://www.linkedin.com/in/robmaxwell2"
+          ><button class="button">Connect with Me</button></a
+        >
+      </div>
+    </div>
+  </body>
 </html>
